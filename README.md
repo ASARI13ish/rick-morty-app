@@ -66,3 +66,7 @@ Adapté mobile avec navigation tactile fluide
 ## PWA ready
 
 L’app est préparée pour un déploiement PWA (manifest, icône, thème couleur, etc).
+
+## Lien vers l'app en ligne
+
+https://rickpedia-five.vercel.app/
