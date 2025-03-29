@@ -1,0 +1,17 @@
+{
+  "name": "Rick & Morty Pedia",
+  "short_name": "RickPedia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070f1c",
+  "theme_color": "#070f1c",
+  "description": "Rechercher et explorer les personnages de Rick & Morty",
+
+  "icons": [
+  {
+    "src": "/ricknm.jpeg",
+    "sizes": "512x512",
+    "type": "image/jpeg"
+  }
+]
+}

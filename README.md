@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# 🧪 Rick & Morty Pedia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application React en TypeScript permettant d’explorer l’univers de **Rick & Morty**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctions principales
 
-## Expanding the ESLint configuration
+- 🔍 **Recherche de personnages** par nom
+- 🧬 **Filtres dynamiques** : statut, genre, espèce
+- 📄 **Fiche personnage détaillée**
+- 📱 **Responsive** mobile / desktop
+- ⏩ **Pagination fluide**
+- 🌀 **Animations Lottie** & transitions `framer-motion`
+- 🎁 **Easter Egg** animé (indice : clique sur le logo 5 fois)
+- 🧭 **Navigation SPA** avec React Router
+- 💚 **Effets visuels 3D & UI organique**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Stack technique
+
+- **React** + **TypeScript**
+- **TailwindCSS** pour le design
+- **Framer Motion** pour les animations fluides
+- **@lottiefiles/dotlottie-react** pour les animations vectorielles
+- **Vite**
+- **React Router** pour la navigation
+- **Rick & Morty REST API**
+
+---
+
+## Installation
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+git clone https://github.com/asari13ish/rick-morty-app.git
+cd rick-morty-app
+npm install
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+
+L’app tourne ensuite sur http://localhost:5173 par défaut.
+
+## Build pour la production
+
+`npm run build`
+
+## Structure
+
+- src/components/ → Composants UI
+
+- public/ → Assets statiques (masque SVG, logo, manifest, etc)
+
+## Bonus UX
+
+Lottie intro au lancement (désactivée après une fois)
+
+Filtres contextuels + gestion de clic en dehors
+
+Animation “portail” pour l’Easter Egg
+
+Adapté mobile avec navigation tactile fluide
+
+## PWA ready
+
+L’app est préparée pour un déploiement PWA (manifest, icône, thème couleur, etc).
